@@ -70,7 +70,7 @@ group by Store_Location
 order by 2 desc
 
 ------------------------------------------
---Looking at number of stores by Location
+--Looking at NetIncome by Store Location
 select stores.Store_Location, sum((products.Product_Price*sales.Units)-(products.Product_Cost*sales.Units)) as NetIncome
 from stores
 join sales
